@@ -135,7 +135,6 @@
                         @endforeach
                     </ul>
                     <div class="modal-footer mt-3">
-                        <button type="button" class="btn btn-secondary me-3" data-bs-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-primary">Asignar</button>
                     </div>
                 </form>
