@@ -15,6 +15,11 @@ class CreateAgendaTable extends Migration
     {
         Schema::create('agenda', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre_cliente');
+            $table->string('descripcion')->nullable();
+            $table->timestamp('fecha_entrega');
+            $table->string('direccion');
+            $table->boolean('entregado')->default(false);
             $table->timestamps();
         });
     }
