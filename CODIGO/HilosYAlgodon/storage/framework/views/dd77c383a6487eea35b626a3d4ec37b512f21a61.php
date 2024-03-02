@@ -67,6 +67,13 @@
                         </li>
                     <?php endif; ?>
 
+                    <?php if(Auth::user()->rolValidation(['Admin', 'Productos'])): ?>
+                        <li class="nav-item list-group nav-link-item">
+                            <a href="<?php echo e(route('admin.agenda.')); ?>" class="nav-link text-white">
+                                <i class="bi bi-person-lines-fill me-2"></i>Agenda
+                            </a>
+                        </li>
+                    <?php endif; ?>
 
                     <?php if(Auth::user()->rolValidation(['Admin'])): ?>
                         <hr class="my-2">
@@ -79,7 +86,11 @@
                                 Usuarios
                             </a>
                         </li>
-                        
+                        <li class="nav-item list-group nav-link-item">
+                            <a href="<?php echo e(route('admin.roles.roles')); ?>" class="nav-link text-white">
+                                <i class="bi bi-person-lines-fill me-2"></i>Roles
+                            </a>
+                        </li>
                     <?php endif; ?>
 
                     <?php if (is_impersonating($guard = null)) : ?>

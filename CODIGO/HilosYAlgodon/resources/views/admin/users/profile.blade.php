@@ -77,7 +77,7 @@
                         </form>
                     @endif
                 </div>
-                {{-- <div class="card mb-3 mx-2 p-3 flex-fill">
+                <div class="card mb-3 mx-2 p-3 flex-fill">
                     <h3>Roles</h3>
                     <form action="{{ route('admin.updateUserRoles', encrypt($user->id)) }}" id="update_product_info"
                         method="POST" enctype="multipart/form-data">
@@ -103,7 +103,7 @@
                         </ul>
                         <button type="submit" class="btn btn-info mt-3 float-end">Guardar</button>
                     </form>
-                </div> --}}
+                </div>
             </div>
         </div>
     </div>

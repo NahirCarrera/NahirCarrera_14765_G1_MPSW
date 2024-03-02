@@ -67,6 +67,13 @@
                         </li>
                     @endif
 
+                    @if (Auth::user()->rolValidation(['Admin', 'Productos']))
+                        <li class="nav-item list-group nav-link-item">
+                            <a href="{{ route('admin.agenda.') }}" class="nav-link text-white">
+                                <i class="bi bi-person-lines-fill me-2"></i>Agenda
+                            </a>
+                        </li>
+                    @endif
 
                     @if (Auth::user()->rolValidation(['Admin']))
                         <hr class="my-2">
@@ -79,11 +86,11 @@
                                 Usuarios
                             </a>
                         </li>
-                        {{-- <li class="nav-item list-group nav-link-item">
+                        <li class="nav-item list-group nav-link-item">
                             <a href="{{ route('admin.roles.roles') }}" class="nav-link text-white">
                                 <i class="bi bi-person-lines-fill me-2"></i>Roles
                             </a>
-                        </li> --}}
+                        </li>
                     @endif
 
                     @impersonating($guard = null)

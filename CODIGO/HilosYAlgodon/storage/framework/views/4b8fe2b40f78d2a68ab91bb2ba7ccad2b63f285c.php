@@ -205,7 +205,6 @@ unset($__errorArgs, $__bag); ?>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </ul>
                     <div class="modal-footer mt-3">
-                        <button type="button" class="btn btn-secondary me-3" data-bs-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-primary">Asignar</button>
                     </div>
                 </form>
