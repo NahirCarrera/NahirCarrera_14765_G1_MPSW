@@ -55,6 +55,10 @@ Route::namespace('Admin')->prefix('admin')->middleware(
             Route::put('/', 'ConfiguracionesController@updateSueldoBase')->name('updateSueldoBase');
         });
 
+        Route::namespace('Agenda')->prefix('agenda')->name('agenda.')->group(function () {
+            Route::get('/', 'AgendaController@index');
+        });
+
         Route::prefix('roles')->name('roles.')->group(function () {
             Route::get('/', 'RolesController@roles')->name('roles');
             Route::post('/newRole', 'RolesController@newRole')->name('newRole');
