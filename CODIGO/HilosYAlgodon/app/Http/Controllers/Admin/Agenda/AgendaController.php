@@ -72,6 +72,42 @@ class AgendaController extends Controller
         return back()->with(['danger' => 'La orden no se encontró']);
     }
 
+    public function editAsignacionProductos(Request $newProductos, $ordenId)
+    {
+        if ($newProductos && $ordenId) {
+            try {
+                $ordenId = decrypt($ordenId);
+                $materialesToAssign = $newProductos->except(['_token', '_method', 'asignarMateriales_length']);
+                $nuevosMaterialesIds = [];
+                $idsProductosAsignados = ProductosPorOrden::where('orden_id', $ordenId)->pluck('producto_id')->toArray();
+
+                foreach ($materialesToAssign as $checkbox => $value) {
+                    $parts = explode('_', $value);
+                    $materialId = $parts[1];
+                    $nuevosMaterialesIds[] = $materialId;
+                    if (!in_array($materialId, $idsProductosAsignados)) {
+                        $newAssignation = new ProductosPorOrden();
+                        $newAssignation->orden_id = $ordenId;
+                        $newAssignation->producto_id = $materialId;
+                        $newAssignation->save();
+                    }
+                }
+
+                foreach ($idsProductosAsignados as $id) {
+                    if (!in_array($id, $nuevosMaterialesIds)) {
+                        ProductosPorOrden::where('orden_id', $ordenId)->where('producto_id', $id)->delete();
+                    }
+                }
+
+                return back()->with(['success' => 'Los productos se asignaron con éxito']);
+            } catch (Exception $e) {
+                return back()->with(['danger' => 'Ocurrió un error: ' . $e]);
+            }
+        } else {
+            return back()->with(['danger' => 'Ocurrió un error']);
+        }
+    }
+
     public function destroy($id)
     {
         $agenda = Agenda::find(decrypt($id));
