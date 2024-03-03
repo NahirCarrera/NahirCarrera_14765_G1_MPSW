@@ -36,7 +36,7 @@
                             </td>
                             </td>
                             <td>
-                                <a href="" class="btn btn-primary">
+                                <a href="<?php echo e(route('admin.agenda.details', encrypt($orden->id))); ?>" class="btn btn-primary">
                                     Editar
                                 </a>
                                 <button type="button" class="btn btn-danger" data-bs-toggle="modal"

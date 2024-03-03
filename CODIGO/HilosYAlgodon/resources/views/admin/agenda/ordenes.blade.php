@@ -36,7 +36,7 @@
                             </td>
                             </td>
                             <td>
-                                <a href="" class="btn btn-primary">
+                                <a href="{{ route('admin.agenda.details', encrypt($orden->id)) }}" class="btn btn-primary">
                                     Editar
                                 </a>
                                 <button type="button" class="btn btn-danger" data-bs-toggle="modal"
@@ -114,7 +114,7 @@
 
                         <div class="form-floating mb-3">
                             <textarea class="form-control @error('descripcion') is-invalid @enderror" placeholder="Leave a comment here"
-                                id="descripcion" name="descripcion"></textarea>
+                                id="descripcion" name="descripcion">{{ old('descripcion') }}</textarea>
                             <label for="descripcion">Descripcion</label>
                             @error('descripcion')
                                 <span class="invalid-feedback" role="alert">
@@ -141,7 +141,7 @@
 
                         <div class="form-floating mb-3">
                             <textarea class="form-control @error('direccion') is-invalid @enderror" placeholder="Leave a comment here"
-                                id="direccion" name="direccion"></textarea>
+                                id="direccion" name="direccion">{{ old('direccion') }}</textarea>
                             <label for="direccion">Dirección</label>
                             @error('direccion')
                                 <span class="invalid-feedback" role="alert">

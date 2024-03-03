@@ -1,0 +1,29 @@
+# Laravel specific
+.env
+vendor/
+node_modules/
+public/storage
+public/hot
+storage/*.key
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# IDE specific
+.idea/
+.vscode/
+
+# Build files
+public/css/
+public/js/
+public/mix-manifest.json
+public/web.config
+
+# Testing
+phpunit.xml
+/tests/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

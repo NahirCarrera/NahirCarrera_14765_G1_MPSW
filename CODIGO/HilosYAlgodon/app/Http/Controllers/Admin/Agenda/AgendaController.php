@@ -39,6 +39,12 @@ class AgendaController extends Controller
         }
     }
 
+    public function details($id)
+    {
+        $orden = Agenda::find(decrypt($id));
+        return view('admin.agenda.ordenDetail', compact('orden'));
+    }
+
     public function destroy($id)
     {
         $agenda = Agenda::find(decrypt($id));
