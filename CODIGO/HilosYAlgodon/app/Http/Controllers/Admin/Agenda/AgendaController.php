@@ -38,4 +38,14 @@ class AgendaController extends Controller
             return $e->getMessage();
         }
     }
+
+    public function destroy($id)
+    {
+        $agenda = Agenda::find(decrypt($id));
+        if ($agenda) {
+            $agenda->delete();
+            return back()->with(['success' => 'La orden se eliminó con éxito']);
+        }
+        return back()->with(['danger' => 'La orden no se encontró']);
+    }
 }

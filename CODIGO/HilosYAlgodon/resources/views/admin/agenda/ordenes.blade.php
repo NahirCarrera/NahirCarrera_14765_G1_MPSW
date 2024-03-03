@@ -34,47 +34,49 @@
                                     <span class="badge bg-secondary">Pendiente</span>
                                 @endif
                             </td>
-                    </td>
-                    <td>
-                        <a href="" class="btn btn-primary">
-                            Editar
-                        </a>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                            data-bs-target="#modalDeleteMaterial{{ $orden->id }}">
-                            Eliminar
-                        </button>
-                    </td>
-                    </tr>
+                            </td>
+                            <td>
+                                <a href="" class="btn btn-primary">
+                                    Editar
+                                </a>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#modalDeleteMaterial{{ $orden->id }}">
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
 
-                    <!-- Delete Modal -->
-                    <div class="modal fade" id="modalDeleteMaterial{{ $orden->id }}" data-bs-backdrop="static"
-                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">¿Está seguro de eliminar el
-                                        orden:
-                                        {{ $orden->nombre }}?</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p class="text-danger fw-bold">Los datos no se podrán recuperar</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="button" class="btn btn-primary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" class="float-right ml-2 btn btn-danger">
-                                            Eliminar
-                                        </button>
-                                    </form>
+                        <!-- Delete Modal -->
+                        <div class="modal fade" id="modalDeleteMaterial{{ $orden->id }}" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">¿Está seguro de eliminar el
+                                            orden del cliente:
+                                            {{ $orden->nombre_cliente }}?</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-danger fw-bold">Los datos no se podrán recuperar</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form action="{{ route('admin.agenda.destroy', encrypt($orden->id)) }}"
+                                            method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="submit" class="float-right ml-2 btn btn-danger">
+                                                Eliminar
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     @endforeach
                 </tbody>
             </table>
