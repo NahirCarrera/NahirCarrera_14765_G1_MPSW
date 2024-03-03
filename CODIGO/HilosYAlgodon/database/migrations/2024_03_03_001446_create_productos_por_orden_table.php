@@ -17,7 +17,7 @@ class CreateProductosPorOrdenTable extends Migration
             $table->id();
             $table->unsignedBigInteger('orden_id');
             $table->unsignedBigInteger('producto_id');
-            $table->double('cantidad', 8, 3)->default('0')->nullable();
+            $table->integer('cantidad')->default('0')->nullable();
             $table->timestamps();
 
             $table->foreign('orden_id')
@@ -47,6 +47,6 @@ class CreateProductosPorOrdenTable extends Migration
             $table->dropColumn('orden_id');
             $table->dropColumn('producto_id');
         });
-        Schema::dropIfExists('materiales_por_producto');
+        Schema::dropIfExists('productos_por_orden');
     }
 }

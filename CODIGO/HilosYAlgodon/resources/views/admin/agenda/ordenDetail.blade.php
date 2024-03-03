@@ -102,7 +102,29 @@
                         <i class="bi bi-plus-lg"></i> Elegir Productos
                     </button>
                 </div>
-                
+
+                <form action="{{ route('admin.agenda.editCantidadProductos', encrypt($orden->id)) }}" method="POST"
+                    enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+                    <ul class="list-group text-start">
+                        @foreach ($productosAsignados as $asignacion)
+                            @php
+                                $producto = $asignacion->getProducto(encrypt($asignacion->producto_id));
+                            @endphp
+                            <div class="input-group">
+                                <span class="input-group-text" for="asignacion_{{ $asignacion->id }}">
+                                    {{ $producto->nombre }} </span>
+                                <input name="{{ $asignacion->id }}" min="1" step="1" type="number"
+                                    id="asignacion_{{ $asignacion->id }}" class="form-control"
+                                    value="{{ $asignacion->cantidad }}" required>
+                            </div>
+                        @endforeach
+                    </ul>
+                    <div class="modal-footer mt-3">
+                        <button type="submit" class="btn btn-primary">Asignar</button>
+                    </div>
+                </form>
 
             </div>
         </div>

@@ -28,7 +28,7 @@
                             <td>{{ $orden->fecha_entrega }}</td>
                             <td>{{ $orden->direccion }}</td>
                             <td style="text-align: center">
-                                @if ($orden->estado == 1)
+                                @if ($orden->estado == 0)
                                     <span class="badge bg-success">Entregado</span>
                                 @else
                                     <span class="badge bg-secondary">Pendiente</span>

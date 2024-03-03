@@ -59,9 +59,14 @@ Route::namespace('Admin')->prefix('admin')->middleware(
             Route::get('/', 'AgendaController@index');
             Route::post('/create', 'AgendaController@create')->name('create');
             Route::get('/details/{id}', 'AgendaController@details')->name('details');
-            Route::put('/editAsignacionMateriales/{id}', 'AgendaController@editAsignacionProductos')->name('editAsignacionProductos');
             Route::put('/edit/{id}', 'AgendaController@edit')->name('edit');
+            Route::put('/editAsignacionProductos/{id}', 'AgendaController@editAsignacionProductos')->name('editAsignacionProductos');
+            Route::put('/editCantidadProductos/{id}', 'AgendaController@editCantidadProductos')->name('editCantidadProductos');
             Route::delete('/destroy/{id}', 'AgendaController@destroy')->name('destroy');
+        });
+
+        Route::namespace('Reportes')->prefix('reportes')->name('reportes.')->group(function () {
+            Route::get('/', 'ReportesController@index');
         });
 
         Route::prefix('roles')->name('roles.')->group(function () {

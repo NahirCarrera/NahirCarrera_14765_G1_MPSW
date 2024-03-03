@@ -172,7 +172,29 @@ unset($__errorArgs, $__bag); ?>
                         <i class="bi bi-plus-lg"></i> Elegir Productos
                     </button>
                 </div>
-                
+
+                <form action="<?php echo e(route('admin.agenda.editCantidadProductos', encrypt($orden->id))); ?>" method="POST"
+                    enctype="multipart/form-data">
+                    <?php echo csrf_field(); ?>
+                    <?php echo method_field('PUT'); ?>
+                    <ul class="list-group text-start">
+                        <?php $__currentLoopData = $productosAsignados; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $asignacion): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php
+                                $producto = $asignacion->getProducto(encrypt($asignacion->producto_id));
+                            ?>
+                            <div class="input-group">
+                                <span class="input-group-text" for="asignacion_<?php echo e($asignacion->id); ?>">
+                                    <?php echo e($producto->nombre); ?> </span>
+                                <input name="<?php echo e($asignacion->id); ?>" min="1" step="1" type="number"
+                                    id="asignacion_<?php echo e($asignacion->id); ?>" class="form-control"
+                                    value="<?php echo e($asignacion->cantidad); ?>" required>
+                            </div>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </ul>
+                    <div class="modal-footer mt-3">
+                        <button type="submit" class="btn btn-primary">Asignar</button>
+                    </div>
+                </form>
 
             </div>
         </div>

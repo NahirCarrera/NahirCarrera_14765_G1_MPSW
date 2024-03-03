@@ -540,6 +540,7 @@ class ComposerStaticInit398442f486a97aecf84f90ffa1e88729
         'App\\Model\\Materiales' => __DIR__ . '/../..' . '/app/Model/Materiales.php',
         'App\\Model\\MaterialesPorProducto' => __DIR__ . '/../..' . '/app/Model/MaterialesPorProducto.php',
         'App\\Model\\Productos' => __DIR__ . '/../..' . '/app/Model/Productos.php',
+        'App\\Model\\ProductosPorOrden' => __DIR__ . '/../..' . '/app/Model/ProductosPorOrden.php',
         'App\\Model\\Role' => __DIR__ . '/../..' . '/app/Model/Role.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',

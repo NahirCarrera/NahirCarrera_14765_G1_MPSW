@@ -12,5 +12,7 @@ class ProductosPorOrden extends Model
      * @var string
      */
     protected $table = 'productos_por_orden';
-
+    public function getProducto($productoId){
+        return Productos::where('id',decrypt($productoId))->first();
+    }
 }

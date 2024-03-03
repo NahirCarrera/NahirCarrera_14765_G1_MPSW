@@ -17,14 +17,14 @@ class CreateMaterialesPorProductoTable extends Migration
             $table->id();
             $table->unsignedBigInteger('producto_id');
             $table->unsignedBigInteger('material_id');
-            $table->double('cantidad',8,3)->default('0')->nullable();
+            $table->double('cantidad', 8, 3)->default('0')->nullable();
             $table->timestamps();
 
             $table->foreign('producto_id')
                 ->references('id')
                 ->on('productos')
                 ->onDelete('cascade');
-                
+
             $table->foreign('material_id')
                 ->references('id')
                 ->on('materiales')

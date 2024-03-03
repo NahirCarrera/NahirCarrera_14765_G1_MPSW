@@ -108,6 +108,28 @@ class AgendaController extends Controller
         }
     }
 
+    public function editCantidadProductos(Request $request, $ordenID)
+    {
+        if ($request && $ordenID) {
+            try {
+                $ordenID = decrypt($ordenID);
+                $productosToAssign = $request->except(['_token', '_method']);
+
+                foreach ($productosToAssign as $idProducto => $cantidad) {
+                    $assignationToModify = ProductosPorOrden::where('id', $idProducto)->first();
+                    $assignationToModify->cantidad = $cantidad;
+                    $assignationToModify->save();
+                }
+
+                return back()->with(['success' => 'Los productos se asignaron con éxito']);
+            } catch (Exception $e) {
+                return back()->with(['danger' => 'Ocurrió un error: ' . $e->getMessage()]);
+            }
+        } else {
+            return back()->with(['danger' => 'Ocurrió un error']);
+        }
+    }
+
     public function destroy($id)
     {
         $agenda = Agenda::find(decrypt($id));

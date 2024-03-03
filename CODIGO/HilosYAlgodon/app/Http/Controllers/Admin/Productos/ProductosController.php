@@ -14,9 +14,13 @@ class ProductosController extends Controller
 {
     public function index()
     {
+        if (!Configuraciones::where('id', 1)->first()) {
+            $newConfiguracion = new Configuraciones();
+            $newConfiguracion->save();
+        }
         $productos = Productos::all();
         $configuraciones = Configuraciones::where('id', 1)->first();
-        return view('admin.productos.ProductosManager', compact('productos','configuraciones'));
+        return view('admin.productos.ProductosManager', compact('productos', 'configuraciones'));
     }
 
     public function create(Request $newProductoData)
@@ -53,7 +57,7 @@ class ProductosController extends Controller
         $idsMaterialesAsignados = MaterialesPorProducto::where('producto_id', decrypt($productID))->pluck('material_id')->toArray();
         $materialesAsignados = MaterialesPorProducto::where('producto_id', decrypt($productID))->get();
         $configuraciones = Configuraciones::where('id', 1)->first();
-        return view('admin.productos.productoDetail', compact('producto', 'materiales', 'idsMaterialesAsignados', 'materialesAsignados','configuraciones'));
+        return view('admin.productos.productoDetail', compact('producto', 'materiales', 'idsMaterialesAsignados', 'materialesAsignados', 'configuraciones'));
     }
 
     public function editAsignacionMateriales(Request $newMateriales, $productID)

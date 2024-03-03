@@ -67,10 +67,18 @@
                         </li>
                     @endif
 
-                    @if (Auth::user()->rolValidation(['Admin', 'Productos']))
+                    @if (Auth::user()->rolValidation(['Admin', 'Agenda']))
                         <li class="nav-item list-group nav-link-item">
                             <a href="{{ route('admin.agenda.') }}" class="nav-link text-white">
-                                <i class="bi bi-person-lines-fill me-2"></i>Agenda
+                                <i class="bi bi-calendar-week me-2"></i>Agenda
+                            </a>
+                        </li>
+                    @endif
+
+                    @if (Auth::user()->rolValidation(['Admin', 'Reportes']))
+                        <li class="nav-item list-group nav-link-item">
+                            <a href="{{ route('admin.reportes.') }}" class="nav-link text-white">
+                                <i class="bi bi-card-list me-2"></i>Reportes
                             </a>
                         </li>
                     @endif
