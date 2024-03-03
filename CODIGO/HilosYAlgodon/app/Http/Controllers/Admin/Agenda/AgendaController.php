@@ -77,7 +77,7 @@ class AgendaController extends Controller
         if ($newProductos && $ordenId) {
             try {
                 $ordenId = decrypt($ordenId);
-                $materialesToAssign = $newProductos->except(['_token', '_method', 'asignarMateriales_length']);
+                $materialesToAssign = $newProductos->except(['_token', '_method', 'asignarProductos_length']);
                 $nuevosMaterialesIds = [];
                 $idsProductosAsignados = ProductosPorOrden::where('orden_id', $ordenId)->pluck('producto_id')->toArray();
 
@@ -115,8 +115,14 @@ class AgendaController extends Controller
                 $ordenID = decrypt($ordenID);
                 $productosToAssign = $request->except(['_token', '_method']);
 
-                foreach ($productosToAssign as $idProducto => $cantidad) {
-                    $assignationToModify = ProductosPorOrden::where('id', $idProducto)->first();
+                foreach ($productosToAssign as $idAsignacionProducto => $cantidad) {
+                    $assignationToModify = ProductosPorOrden::where('id', $idAsignacionProducto)->first();
+                    $productoAsignado = Productos::find($assignationToModify->producto_id);
+                    if ($productoAsignado->cantidad < $cantidad) {
+                        return back()->with(['danger' => 'La cantidad de ' . $productoAsignado->nombre . ' no puede ser mayor a ' . $productoAsignado->cantidad . ', ya que solo se cuenta con ' . $productoAsignado->cantidad . ' unidades en stock']);
+                    }
+                    $productoAsignado->cantidad -= $cantidad;
+                    $productoAsignado->save();
                     $assignationToModify->cantidad = $cantidad;
                     $assignationToModify->save();
                 }

@@ -270,7 +270,35 @@ p {
     background: #0d6dfd30;
     border-radius: 5px;
     padding: 0 5px;
-} 
+}
+
+.table-danger{
+    width: 100%;
+}
+
+.table-danger th{
+    background-color: #b02a37;
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.table-danger tr{
+    border-bottom: 1px solid #b02a37;
+}
+
+.table-warning{
+    width: 100%;
+}
+
+.table-warning th{
+    background-color: #997404;
+    color: #ffffff;
+    border-right: 1px solid #fff3cd;
+}
+
+.table-warning tr{
+    border-bottom: 1px solid #997404;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES

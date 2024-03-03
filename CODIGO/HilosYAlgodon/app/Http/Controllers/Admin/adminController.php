@@ -5,26 +5,31 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Controller;
 use App\Model\Configuraciones;
+use App\Model\Productos;
 use App\Model\Role;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Rules\AlphaSpace;
+use App\Model\Materiales;
+use App\Model\Agenda;
 
 class adminController extends Controller
 {
     public function administrador()
     {
-        
-        return view('admin.adminPrincipal');
+        $productosBajos = Productos::where('cantidad', '<', 10)->get();
+        $ordenesProntasAEntregar = Agenda::where('fecha_entrega', '>', date('Y-m-d\TH:i'))->get();
+        $ordenesRetrasadas = Agenda::where('fecha_entrega', '<', date('Y-m-d\TH:i'))->get();
+        return view('admin.adminPrincipal', compact('productosBajos', 'ordenesProntasAEntregar', 'ordenesRetrasadas'));
     }
 
 
     public function index()
     {
-        if (!Auth::user()->rolValidation(['Admin'])){
-            abort(403,'Unauthorized action.');
+        if (!Auth::user()->rolValidation(['Admin'])) {
+            abort(403, 'Unauthorized action.');
         }
         $users = User::paginate(10);
         return view('admin.users.userManager', compact('users'));
@@ -32,20 +37,20 @@ class adminController extends Controller
 
     public function show($id)
     {
-        if(!Configuraciones::where('id',1)->first()){
+        if (!Configuraciones::where('id', 1)->first()) {
             $newConfiguracion = new Configuraciones();
             $newConfiguracion->save();
         }
-        
-        if (!Auth::user()->rolValidation(['Admin'])){
-            abort(403,'Unauthorized action.');
+
+        if (!Auth::user()->rolValidation(['Admin'])) {
+            abort(403, 'Unauthorized action.');
         }
         $user = User::where('id', decrypt($id))->first();
         if ($user) {
             $roles = Role::all();
             $assignatedRoles = Role::whereJsonContains('assignation', strval($user->id))->get();
-            $configuraciones = Configuraciones::where('id',1)->first();
-            return view('admin.users.profile', compact('user', 'roles', 'assignatedRoles','configuraciones'));
+            $configuraciones = Configuraciones::where('id', 1)->first();
+            return view('admin.users.profile', compact('user', 'roles', 'assignatedRoles', 'configuraciones'));
         } else {
             abort(404);
         }
@@ -53,8 +58,8 @@ class adminController extends Controller
 
     public function store(Request $data)
     {
-        if (!Auth::user()->rolValidation(['Admin'])){
-            abort(403,'Unauthorized action.');
+        if (!Auth::user()->rolValidation(['Admin'])) {
+            abort(403, 'Unauthorized action.');
         }
         $validatedData = $data->validate([
             'name' => ['required', 'max:255', new AlphaSpace],
@@ -73,8 +78,8 @@ class adminController extends Controller
 
     public function update(Request $data, $id)
     {
-        if (!Auth::user()->rolValidation(['Admin'])){
-            abort(403,'Unauthorized action.');
+        if (!Auth::user()->rolValidation(['Admin'])) {
+            abort(403, 'Unauthorized action.');
         }
         $validatedData = $data->validate([
             'name' => ['required', 'max:255', new AlphaSpace],
@@ -98,8 +103,8 @@ class adminController extends Controller
 
     public function updateUserRoles(Request $data, $id)
     {
-        if (!Auth::user()->rolValidation(['Admin'])){
-            abort(403,'Unauthorized action.');
+        if (!Auth::user()->rolValidation(['Admin'])) {
+            abort(403, 'Unauthorized action.');
         }
         $user = User::find(decrypt($id));
         $allRoles = Role::all();
@@ -121,7 +126,7 @@ class adminController extends Controller
                         $asignationToModify = array_diff($asignationToModify, $idArray);
                         $rol->assignation = json_encode(array_values($asignationToModify));
                         $rol->save();
-                    }else{
+                    } else {
                         $asignationToModify = [];
                         $asignationToModify = array_diff($asignationToModify, $idArray);
                         $rol->assignation = json_encode(array_values($asignationToModify));
@@ -148,8 +153,8 @@ class adminController extends Controller
 
     public function destroy($id)
     {
-        if (!Auth::user()->rolValidation(['Admin'])){
-            abort(403,'Unauthorized action.');
+        if (!Auth::user()->rolValidation(['Admin'])) {
+            abort(403, 'Unauthorized action.');
         }
         if (Auth::user()->id == decrypt($id)) {
             return back()->with('warning', 'Bro la vida es bella, no te elimines');
