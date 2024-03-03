@@ -45,6 +45,28 @@ class AgendaController extends Controller
         return view('admin.agenda.ordenDetail', compact('orden'));
     }
 
+    public function edit(Request $data, $id)
+    {
+        $validatedData = $data->validate([
+            'nombre_cliente' => ['required', 'string', 'max:255'],
+            'descripcion' => ['required', 'string'],
+            'fecha_entrega' => ['required'],
+            'direccion' => ['required', 'string'],
+        ]);
+
+        $agenda = Agenda::find(decrypt($id));
+        if ($agenda) {
+            $agenda->nombre_cliente = $data->nombre_cliente;
+            $agenda->descripcion = $data->descripcion;
+            $agenda->fecha_entrega = $data->fecha_entrega;
+            $agenda->direccion = $data->direccion;
+            $agenda->entregado = $data->entregado && $data->entregado == 'on' ? 1 : 0;
+            $agenda->save();
+            return back()->with(['success' => 'La orden se actualizó con éxito']);
+        }
+        return back()->with(['danger' => 'La orden no se encontró']);
+    }
+
     public function destroy($id)
     {
         $agenda = Agenda::find(decrypt($id));

@@ -8,7 +8,8 @@
             </div>
             <div class="card-body">
                 <div class="col mx-auto">
-                    <form action="" id="update_product_info" method="POST" enctype="multipart/form-data">
+                    <form action="<?php echo e(route('admin.agenda.edit', encrypt($orden->id))); ?>" id="update_product_info"
+                        method="POST" enctype="multipart/form-data">
                         <?php echo csrf_field(); ?>
                         <?php echo method_field('PUT'); ?>
 
@@ -107,7 +108,7 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" placeholder="Leave a comment here"
-                                    id="direccion" name="direccion" value="<?php echo e($orden->direccion); ?>"><?php echo e($orden->descripcion); ?></textarea>
+                                    id="direccion" name="direccion"><?php echo e($orden->descripcion); ?></textarea>
                                 <label for="direccion">Dirección</label>
                                 <?php $__errorArgs = ['direccion'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -122,6 +123,34 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                             </div>
+
+                            <label for="entregado"
+                                class="form-check form-switch my-3 mx-auto rounded border border-primary px-2 py-1 list-group-item list-group-item-action list-group-item-primary"
+                                style="width:25%;height:35px;min-width:200px;">
+                                <input name="entregado" id="entregado"
+                                    class="form-check-input float-end <?php $__errorArgs = ['entregado'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                                    type="checkbox" role="switch" <?php if($orden->entregado === 1): ?> checked <?php else: ?> <?php endif; ?>>
+                                <label class="form-check-label float-start" for="entregado">Entregado</label>
+                                <?php $__errorArgs = ['entregado'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong><?php echo e($message); ?></strong>
+                                    </span>
+                                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                            </label>
 
                         </div>
                         <div class="modal-footer">

@@ -1,0 +1,29 @@
+# Laravel specific
+./CODIGO/HilosYAlgodon/.env
+./CODIGO/HilosYAlgodon/vendor/
+./CODIGO/HilosYAlgodon/node_modules/
+./CODIGO/HilosYAlgodon/public/storage
+./CODIGO/HilosYAlgodon/public/hot
+./CODIGO/HilosYAlgodon/storage/*.key
+./CODIGO/HilosYAlgodon/Homestead.json
+./CODIGO/HilosYAlgodon/Homestead.yaml
+./CODIGO/HilosYAlgodon/npm-debug.log
+./CODIGO/HilosYAlgodon/yarn-error.log
+
+# IDE specific
+./CODIGO/HilosYAlgodon/.idea/
+./CODIGO/HilosYAlgodon/.vscode/
+
+# Build files
+./CODIGO/HilosYAlgodon/public/css/
+./CODIGO/HilosYAlgodon/public/js/
+./CODIGO/HilosYAlgodon/public/mix-manifest.json
+./CODIGO/HilosYAlgodon/public/web.config
+
+# Testing
+./CODIGO/HilosYAlgodon/phpunit.xml
+./CODIGO/HilosYAlgodon//tests/
+
+# Miscellaneous
+./CODIGO/HilosYAlgodon/.DS_Store
+./CODIGO/HilosYAlgodon/Thumbs.db

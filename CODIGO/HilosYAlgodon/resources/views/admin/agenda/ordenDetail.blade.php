@@ -8,7 +8,8 @@
             </div>
             <div class="card-body">
                 <div class="col mx-auto">
-                    <form action="" id="update_product_info" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('admin.agenda.edit', encrypt($orden->id)) }}" id="update_product_info"
+                        method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
 
@@ -58,7 +59,7 @@
 
                             <div class="form-floating mb-3">
                                 <textarea class="form-control @error('direccion') is-invalid @enderror" placeholder="Leave a comment here"
-                                    id="direccion" name="direccion" value="{{ $orden->direccion }}">{{ $orden->descripcion }}</textarea>
+                                    id="direccion" name="direccion">{{ $orden->descripcion }}</textarea>
                                 <label for="direccion">Dirección</label>
                                 @error('direccion')
                                     <span class="invalid-feedback" role="alert">
@@ -66,6 +67,20 @@
                                     </span>
                                 @enderror
                             </div>
+
+                            <label for="entregado"
+                                class="form-check form-switch my-3 mx-auto rounded border border-primary px-2 py-1 list-group-item list-group-item-action list-group-item-primary"
+                                style="width:25%;height:35px;min-width:200px;">
+                                <input name="entregado" id="entregado"
+                                    class="form-check-input float-end @error('entregado') is-invalid @enderror"
+                                    type="checkbox" role="switch" @if ($orden->entregado === 1) checked @else @endif>
+                                <label class="form-check-label float-start" for="entregado">Entregado</label>
+                                @error('entregado')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </label>
 
                         </div>
                         <div class="modal-footer">

@@ -59,6 +59,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(
             Route::get('/', 'AgendaController@index');
             Route::post('/create', 'AgendaController@create')->name('create');
             Route::get('/details/{id}', 'AgendaController@details')->name('details');
+            Route::put('/edit/{id}', 'AgendaController@edit')->name('edit');
             Route::delete('/destroy/{id}', 'AgendaController@destroy')->name('destroy');
         });
 
