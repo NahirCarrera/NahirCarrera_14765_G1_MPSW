@@ -22,7 +22,8 @@ class adminController extends Controller
         $productosBajos = Productos::where('cantidad', '<', 10)->get();
         $ordenesProntasAEntregar = Agenda::where('fecha_entrega', '>', date('Y-m-d\TH:i'))->get();
         $ordenesRetrasadas = Agenda::where('fecha_entrega', '<', date('Y-m-d\TH:i'))->get();
-        return view('admin.adminPrincipal', compact('productosBajos', 'ordenesProntasAEntregar', 'ordenesRetrasadas'));
+        $fechaActual = date('Y-m-d');
+        return view('admin.adminPrincipal', compact('productosBajos', 'ordenesProntasAEntregar', 'ordenesRetrasadas', 'fechaActual'));
     }
 
 

@@ -20,6 +20,7 @@
                     <table class="table-danger">
                         <thead>
                             <tr>
+                                <th>id</th>
                                 <th>Producto</th>
                                 <th>Cantidad</th>
                             </tr>
@@ -27,6 +28,7 @@
                         @foreach ($productosBajos as $productos)
                             <tbody>
                                 <tr>
+                                    <td>{{ $productos->id }}</td>
                                     <td>
                                         {{ $productos->nombre }}
                                     </td>
@@ -42,20 +44,25 @@
 
             @if (!$ordenesRetrasadas->isEmpty())
                 <div class="alert alert-danger" role="alert">
-                    <h5>Inventario</h5>
+                    <h5>Entregas</h5>
                     <p>Atención! Las siguientes entregas se encuentran RETRASADAS:</p>
 
                     <table class="table-danger">
                         <thead>
                             <tr>
+                                <th>id</th>
                                 <th>Cliente</th>
                                 <th>Descripcion</th>
                                 <th>Fecha de Entrega</th>
+                                <th>Días de retraso</th>
                             </tr>
                         </thead>
                         @foreach ($ordenesRetrasadas as $orden)
                             <tbody>
                                 <tr>
+                                    <td>
+                                        {{ $orden->id }}
+                                    </td>
                                     <td>
                                         {{ $orden->nombre_cliente }}
                                     </td>
@@ -64,6 +71,9 @@
                                     </td>
                                     <td>
                                         {{ $orden->fecha_entrega }}
+                                    </td>
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($orden->fecha_entrega)->diffInDays(now()) }}
                                     </td>
                                 </tr>
                             </tbody>
@@ -75,20 +85,26 @@
 
             @if (!$ordenesProntasAEntregar->isEmpty())
                 <div class="alert alert-warning" role="alert">
-                    <h5>Inventario</h5>
+                    <h5>Entregas</h5>
                     <p>Atención! Las siguientes entregas se encuentran pendientes:</p>
 
                     <table class="table-warning">
                         <thead>
                             <tr>
+                                <th>id</th>
                                 <th>Cliente</th>
                                 <th>Descripcion</th>
                                 <th>Fecha de Entrega</th>
+                                <th>Días restantes</th>
                             </tr>
                         </thead>
                         @foreach ($ordenesProntasAEntregar as $orden)
                             <tbody>
+
                                 <tr>
+                                    <td>
+                                        {{ $orden->id }}
+                                    </td>
                                     <td>
                                         {{ $orden->nombre_cliente }}
                                     </td>
@@ -96,9 +112,13 @@
                                         {{ $orden->descripcion }}
                                     </td>
                                     <td>
-                                        {{ $orden->fecha_entrega }}
+                                        {{ \Carbon\Carbon::parse($orden->fecha_entrega)->format('Y-m-d') }}
+                                    </td>
+                                    <td>
+                                        {{ \Carbon\Carbon::parse($orden->fecha_entrega)->diffInDays(now()->subDay()) }}
                                     </td>
                                 </tr>
+
                             </tbody>
                         @endforeach
                     </table>
