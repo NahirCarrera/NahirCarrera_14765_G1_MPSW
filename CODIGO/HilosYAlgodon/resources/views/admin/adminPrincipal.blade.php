@@ -6,14 +6,14 @@
     </div>
     <div class="card">
         <div class="card-body">
-            @if ($productosBajos->isEmpty() && !$ordenesProntasAEntregar)
+            @if ($productosBajos && $productosBajos->isEmpty() && !$ordenesProntasAEntregar)
                 <div class="alert alert-success" role="alert">
                     <h5>Todo en orden</h5>
                     <p>El inventario se encuentra en buen estado Y no tiene entregas pendientes!</p>
                 </div>
             @endif
 
-            @if (!$productosBajos->isEmpty())
+            @if ($productosBajos && !$productosBajos->isEmpty())
                 <div class="alert alert-danger" role="alert">
                     <h5>Inventario</h5>
                     <p>Atención! Los siguientes productos se encuentran bajos de stock:</p>
@@ -42,7 +42,7 @@
                 </div>
             @endif
 
-            @if (!$ordenesRetrasadas->isEmpty())
+            @if ($ordenesRetrasadas && !$ordenesRetrasadas->isEmpty())
                 <div class="alert alert-danger" role="alert">
                     <h5>Entregas</h5>
                     <p>Atención! Las siguientes entregas se encuentran RETRASADAS:</p>
@@ -83,7 +83,7 @@
             @endif
 
 
-            @if (!$ordenesProntasAEntregar->isEmpty())
+            @if ($ordenesProntasAEntregar && !$ordenesProntasAEntregar->isEmpty())
                 <div class="alert alert-warning" role="alert">
                     <h5>Entregas</h5>
                     <p>Atención! Las siguientes entregas se encuentran pendientes:</p>

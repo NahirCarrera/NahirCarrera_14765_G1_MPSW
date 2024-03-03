@@ -6,14 +6,14 @@
     </div>
     <div class="card">
         <div class="card-body">
-            <?php if($productosBajos->isEmpty() && !$ordenesProntasAEntregar): ?>
+            <?php if($productosBajos && $productosBajos->isEmpty() && !$ordenesProntasAEntregar): ?>
                 <div class="alert alert-success" role="alert">
                     <h5>Todo en orden</h5>
                     <p>El inventario se encuentra en buen estado Y no tiene entregas pendientes!</p>
                 </div>
             <?php endif; ?>
 
-            <?php if(!$productosBajos->isEmpty()): ?>
+            <?php if($productosBajos && !$productosBajos->isEmpty()): ?>
                 <div class="alert alert-danger" role="alert">
                     <h5>Inventario</h5>
                     <p>Atención! Los siguientes productos se encuentran bajos de stock:</p>
@@ -44,7 +44,7 @@
                 </div>
             <?php endif; ?>
 
-            <?php if(!$ordenesRetrasadas->isEmpty()): ?>
+            <?php if($ordenesRetrasadas && !$ordenesRetrasadas->isEmpty()): ?>
                 <div class="alert alert-danger" role="alert">
                     <h5>Entregas</h5>
                     <p>Atención! Las siguientes entregas se encuentran RETRASADAS:</p>
@@ -90,7 +90,7 @@
             <?php endif; ?>
 
 
-            <?php if(!$ordenesProntasAEntregar->isEmpty()): ?>
+            <?php if($ordenesProntasAEntregar && !$ordenesProntasAEntregar->isEmpty()): ?>
                 <div class="alert alert-warning" role="alert">
                     <h5>Entregas</h5>
                     <p>Atención! Las siguientes entregas se encuentran pendientes:</p>
