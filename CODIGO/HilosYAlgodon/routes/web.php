@@ -67,6 +67,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(
 
         Route::namespace('Reportes')->prefix('reportes')->name('reportes.')->group(function () {
             Route::get('/', 'ReportesController@index');
+            Route::post('/', 'ReportesController@generarReporte')->name('generarReporte');
         });
 
         Route::prefix('roles')->name('roles.')->group(function () {

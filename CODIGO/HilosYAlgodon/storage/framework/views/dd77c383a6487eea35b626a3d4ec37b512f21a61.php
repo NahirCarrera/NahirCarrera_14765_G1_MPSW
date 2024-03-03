@@ -25,6 +25,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- CSS Files -->
     <link href="<?php echo e(url('css/adminPanel.css')); ?>" rel="stylesheet" />
+    <link href="<?php echo e(url('css/printReport.css')); ?>" rel="stylesheet" type="text/css" media="print">
 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -176,6 +177,11 @@
     let tableProductos = new DataTable('#productos');
     let tableMateriales = new DataTable('#materiales');
     let tableAsignarMateriales = new DataTable('#asignarMateriales');
+    let tableAgenda = new DataTable('#ordenes');
+    let tableAsignarProductos = new DataTable('#asignarProductos');
+    let tableMaterialesReport = new DataTable('#materialesReport');
+    let tableInventarioReport = new DataTable('#productosReport');
+    let tableAgendaReport = new DataTable('#agendaReport');
 </script>
 
 </html>

@@ -28,7 +28,7 @@
                             <td><?php echo e($orden->fecha_entrega); ?></td>
                             <td><?php echo e($orden->direccion); ?></td>
                             <td style="text-align: center">
-                                <?php if($orden->estado == 0): ?>
+                                <?php if($orden->entregado): ?>
                                     <span class="badge bg-success">Entregado</span>
                                 <?php else: ?>
                                     <span class="badge bg-secondary">Pendiente</span>

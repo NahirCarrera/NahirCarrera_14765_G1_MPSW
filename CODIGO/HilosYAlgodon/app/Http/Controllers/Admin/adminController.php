@@ -16,6 +16,7 @@ class adminController extends Controller
 {
     public function administrador()
     {
+        
         return view('admin.adminPrincipal');
     }
 

@@ -1,0 +1,23 @@
+* {
+    font-size: 0.9rem;
+}
+
+#formReport,
+.sidebar_container,
+.dt-layout-row,
+#button_close_sideBar,
+#button_sideBar,
+.dt-column-order,
+#printbutton {
+    display: none !important;
+}
+
+.dt-layout-table {
+    display: block !important;
+}
+
+#materialesReport,
+#productosReport,
+#agendaReport {
+    width: 100% !important;
+}

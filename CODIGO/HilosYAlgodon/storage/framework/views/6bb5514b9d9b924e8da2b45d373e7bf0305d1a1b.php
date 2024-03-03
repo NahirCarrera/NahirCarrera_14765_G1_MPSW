@@ -216,7 +216,7 @@ unset($__errorArgs, $__bag); ?>
                         <?php echo csrf_field(); ?>
                         <?php echo method_field('PUT'); ?>
                         <div class="col mx-auto">
-                            <table class="table table-bordered w-100" id="asignarMateriales">
+                            <table class="table table-bordered w-100" id="asignarProductos">
                                 <thead>
                                     <tr class="bg-primary text-light">
                                         <th>Nombre</th>
