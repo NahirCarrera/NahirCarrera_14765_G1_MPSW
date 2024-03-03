@@ -57,6 +57,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(
 
         Route::namespace('Agenda')->prefix('agenda')->name('agenda.')->group(function () {
             Route::get('/', 'AgendaController@index');
+            Route::post('/create', 'AgendaController@create')->name('create');
         });
 
         Route::prefix('roles')->name('roles.')->group(function () {
