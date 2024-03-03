@@ -48,6 +48,7 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
     'App\\Http\\Requests\\ProfileUpdateRequest' => $baseDir . '/app/Http/Requests/ProfileUpdateRequest.php',
+    'App\\Model\\Agenda' => $baseDir . '/app/Model/Agenda.php',
     'App\\Model\\Configuraciones' => $baseDir . '/app/Model/Configuraciones.php',
     'App\\Model\\Materiales' => $baseDir . '/app/Model/Materiales.php',
     'App\\Model\\MaterialesPorProducto' => $baseDir . '/app/Model/MaterialesPorProducto.php',

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin\Agenda;
 
 use App\Http\Controllers\Controller;
+use App\Model\Productos;
+use App\Model\ProductosPorOrden;
 use Illuminate\Http\Request;
 use App\Model\Agenda;
 use Exception;
@@ -42,7 +44,10 @@ class AgendaController extends Controller
     public function details($id)
     {
         $orden = Agenda::find(decrypt($id));
-        return view('admin.agenda.ordenDetail', compact('orden'));
+        $productos = Productos::all();
+        $idsProductosAsignados = ProductosPorOrden::where('orden_id', decrypt($id))->pluck('producto_id')->toArray();
+        $productosAsignados = ProductosPorOrden::where('orden_id', decrypt($id))->get();
+        return view('admin.agenda.ordenDetail', compact('orden', 'productos', 'idsProductosAsignados', 'productosAsignados'));
     }
 
     public function edit(Request $data, $id)

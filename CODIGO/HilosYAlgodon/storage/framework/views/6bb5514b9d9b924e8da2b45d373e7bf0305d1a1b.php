@@ -189,7 +189,41 @@ unset($__errorArgs, $__bag); ?>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <form action="<?php echo e(route('admin.agenda.editAsignacionProductos', encrypt($orden->id))); ?>"
+                        id="update_product_info" method="POST" enctype="multipart/form-data">
+                        <?php echo csrf_field(); ?>
+                        <?php echo method_field('PUT'); ?>
+                        <div class="col mx-auto">
+                            <table class="table table-bordered w-100" id="asignarMateriales">
+                                <thead>
+                                    <tr class="bg-primary text-light">
+                                        <th>Nombre</th>
+                                        <th>OP</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $__currentLoopData = $productos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $producto): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <tr>
+                                            <td><?php echo e($producto->nombre); ?></td>
+                                            <td>
+                                                <input name="material_<?php echo e($producto->id); ?>"
+                                                    value="material_<?php echo e($producto->id); ?>" class="form-check-input"
+                                                    type="checkbox" id="material_<?php echo e($producto->id); ?>"
+                                                    <?php if($idsProductosAsignados): ?> <?php if(in_array($producto->id, $idsProductosAsignados)): ?>
+                                                    checked <?php endif; ?>
+                                                    <?php endif; ?>>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                </tbody>
+                            </table>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Añadir</button>
+                            </div>
+                        </div>
 
+                    </form>
                 </div>
             </div>
         </div>

@@ -102,7 +102,7 @@
                         <i class="bi bi-plus-lg"></i> Elegir Productos
                     </button>
                 </div>
-
+                
 
             </div>
         </div>
@@ -119,7 +119,41 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <form action="{{ route('admin.agenda.editAsignacionProductos', encrypt($orden->id)) }}"
+                        id="update_product_info" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
+                        <div class="col mx-auto">
+                            <table class="table table-bordered w-100" id="asignarMateriales">
+                                <thead>
+                                    <tr class="bg-primary text-light">
+                                        <th>Nombre</th>
+                                        <th>OP</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($productos as $producto)
+                                        <tr>
+                                            <td>{{ $producto->nombre }}</td>
+                                            <td>
+                                                <input name="material_{{ $producto->id }}"
+                                                    value="material_{{ $producto->id }}" class="form-check-input"
+                                                    type="checkbox" id="material_{{ $producto->id }}"
+                                                    @if ($idsProductosAsignados) @if (in_array($producto->id, $idsProductosAsignados))
+                                                    checked @endif
+                                                    @endif>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Añadir</button>
+                            </div>
+                        </div>
 
+                    </form>
                 </div>
             </div>
         </div>

@@ -135,7 +135,7 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" placeholder="Leave a comment here"
-                                id="descripcion" name="descripcion"></textarea>
+                                id="descripcion" name="descripcion"><?php echo e(old('descripcion')); ?></textarea>
                             <label for="descripcion">Descripcion</label>
                             <?php $__errorArgs = ['descripcion'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -190,7 +190,7 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" placeholder="Leave a comment here"
-                                id="direccion" name="direccion"></textarea>
+                                id="direccion" name="direccion"><?php echo e(old('direccion')); ?></textarea>
                             <label for="direccion">Dirección</label>
                             <?php $__errorArgs = ['direccion'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
