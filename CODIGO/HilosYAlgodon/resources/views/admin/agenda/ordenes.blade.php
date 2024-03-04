@@ -23,8 +23,8 @@
                     @foreach ($ordenes as $orden)
                         <tr>
                             <td>{{ $orden->id }}</td>
-                            <td>{{ $orden->descripcion }}</td>
                             <td>{{ $orden->nombre_cliente }}</td>
+                            <td>{{ $orden->descripcion }}</td>
                             <td>{{ $orden->fecha_entrega }}</td>
                             <td>{{ $orden->direccion }}</td>
                             <td style="text-align: center">
@@ -101,7 +101,7 @@
                         <div class="form-floating mb-3">
                             <input id="nombre_cliente" type="text"
                                 class="form-control @error('nombre_cliente') is-invalid @enderror" name="nombre_cliente"
-                                value="{{ old('nombre_cliente') }}" autocomplete="nombre_cliente" placeholder="Almohada">
+                                value="{{ old('nombre_cliente') }}" autocomplete="nombre_cliente" placeholder="Almohada" oninput="validarAlfabeticos(this)">
 
                             <label for="nombre_cliente">{{ __('Nombre del cliente') }}</label>
 

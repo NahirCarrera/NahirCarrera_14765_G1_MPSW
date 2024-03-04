@@ -1,4 +1,3 @@
-console.log("asdd22s");
 function validarAlfabeticos(inputElement) {
     const valor = inputElement.value;
 
@@ -10,4 +9,3 @@ function validarAlfabeticos(inputElement) {
         inputElement.classList.add("is-invalid");
     }
 }
-console.log("asdds");

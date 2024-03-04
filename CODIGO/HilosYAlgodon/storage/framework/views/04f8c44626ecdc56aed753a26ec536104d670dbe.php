@@ -147,7 +147,7 @@ endif;
 unset($__errorArgs, $__bag); ?>" name="fechaFin"
                                         value="<?php echo e(old('fechaFin')); ?>" autocomplete="fechaFin"
                                         placeholder="Insertar el costo">
-                                    <label for="fechaFin">Fecha de Inicio</label>
+                                    <label for="fechaFin">Fecha Final</label>
                                 </div>
 
                                 <?php $__errorArgs = ['fechaFin'];
@@ -272,8 +272,8 @@ unset($__errorArgs, $__bag); ?>
                 <?php $__currentLoopData = $datosAgenda; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $orden): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <tr>
                         <td><?php echo e($orden->id); ?></td>
-                        <td><?php echo e($orden->descripcion); ?></td>
                         <td><?php echo e($orden->nombre_cliente); ?></td>
+                        <td><?php echo e($orden->descripcion); ?></td>
                         <td><?php echo e($orden->fecha_entrega); ?></td>
                         <td><?php echo e($orden->direccion); ?></td>
                         <td style="text-align: center">

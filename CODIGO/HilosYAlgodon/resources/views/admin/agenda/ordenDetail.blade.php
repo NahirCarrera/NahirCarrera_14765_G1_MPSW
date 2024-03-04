@@ -19,7 +19,7 @@
                                 <input id="nombre_cliente" type="text"
                                     class="form-control @error('nombre_cliente') is-invalid @enderror" name="nombre_cliente"
                                     value="{{ $orden->nombre_cliente }}" autocomplete="nombre_cliente"
-                                    placeholder="Almohada">
+                                    placeholder="Almohada" oninput="validarAlfabeticos(this)">
 
                                 <label for="nombre_cliente">{{ __('Nombre del cliente') }}</label>
 

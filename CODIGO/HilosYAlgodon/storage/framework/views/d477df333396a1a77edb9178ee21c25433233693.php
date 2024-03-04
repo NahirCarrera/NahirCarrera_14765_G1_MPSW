@@ -23,8 +23,8 @@
                     <?php $__currentLoopData = $ordenes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $orden): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <tr>
                             <td><?php echo e($orden->id); ?></td>
-                            <td><?php echo e($orden->descripcion); ?></td>
                             <td><?php echo e($orden->nombre_cliente); ?></td>
+                            <td><?php echo e($orden->descripcion); ?></td>
                             <td><?php echo e($orden->fecha_entrega); ?></td>
                             <td><?php echo e($orden->direccion); ?></td>
                             <td style="text-align: center">
@@ -108,7 +108,7 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" name="nombre_cliente"
-                                value="<?php echo e(old('nombre_cliente')); ?>" autocomplete="nombre_cliente" placeholder="Almohada">
+                                value="<?php echo e(old('nombre_cliente')); ?>" autocomplete="nombre_cliente" placeholder="Almohada" oninput="validarAlfabeticos(this)">
 
                             <label for="nombre_cliente"><?php echo e(__('Nombre del cliente')); ?></label>
 

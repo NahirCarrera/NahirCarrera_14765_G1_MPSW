@@ -26,7 +26,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" name="nombre_cliente"
                                     value="<?php echo e($orden->nombre_cliente); ?>" autocomplete="nombre_cliente"
-                                    placeholder="Almohada">
+                                    placeholder="Almohada" oninput="validarAlfabeticos(this)">
 
                                 <label for="nombre_cliente"><?php echo e(__('Nombre del cliente')); ?></label>
 

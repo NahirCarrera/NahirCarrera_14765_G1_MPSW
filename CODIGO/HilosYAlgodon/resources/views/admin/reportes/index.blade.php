@@ -84,7 +84,7 @@
                                         class="form-control @error('fechaFin') is-invalid @enderror" name="fechaFin"
                                         value="{{ old('fechaFin') }}" autocomplete="fechaFin"
                                         placeholder="Insertar el costo">
-                                    <label for="fechaFin">Fecha de Inicio</label>
+                                    <label for="fechaFin">Fecha Final</label>
                                 </div>
 
                                 @error('fechaFin')
@@ -202,8 +202,8 @@
                 @foreach ($datosAgenda as $orden)
                     <tr>
                         <td>{{ $orden->id }}</td>
-                        <td>{{ $orden->descripcion }}</td>
                         <td>{{ $orden->nombre_cliente }}</td>
+                        <td>{{ $orden->descripcion }}</td>
                         <td>{{ $orden->fecha_entrega }}</td>
                         <td>{{ $orden->direccion }}</td>
                         <td style="text-align: center">
