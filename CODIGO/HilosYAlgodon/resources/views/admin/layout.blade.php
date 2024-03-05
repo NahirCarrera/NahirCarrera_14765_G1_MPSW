@@ -119,6 +119,9 @@
                         <strong>{{ Auth::user()->name }}</strong>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                        <li>
+                            <a class="dropdown-item" href="{{ Route('admin.guia', encrypt(Auth::id())) }}">Guia de Usuario</a></li>
+                        <li>
                         <li><a class="dropdown-item"
                                 href="{{ Route('admin.users.show', encrypt(Auth::id())) }}">Perfil</a></li>
                         <li>
@@ -127,13 +130,13 @@
                         <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
+                                            document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
-                        </li>
+                        </li>                        
                     </ul>
                 </div>
             </div>
