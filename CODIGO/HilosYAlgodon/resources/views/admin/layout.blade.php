@@ -120,7 +120,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                         <li><a class="dropdown-item"
-                                href="{{ Route('admin.users.show', encrypt(Auth::id())) }}">Profile</a></li>
+                                href="{{ Route('admin.users.show', encrypt(Auth::id())) }}">Perfil</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
