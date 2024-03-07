@@ -172,7 +172,128 @@
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Añadir nuevo producto</h5>
+                                        <ol>
+                                            <li>Dar click en el icono de agregar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/MSBZvNf/productos1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Completar el formulario de nuevo producto</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/5Y9Z2ZW/productos2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre del producto</li>
+                                                <li>Ingresar una descripción del producto</li>
+                                                <li>Ingresar la cantidad del producto</li>
+                                                <li>Ingresar las horas de trabajo que se ocupo en realizar el producto</li>
+                                            </ol>
+                                            <li>Dar click en guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/W2R6dbX/productos3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Producto agregado </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBHFQWz/productos4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>                                        
+                                        <h5>Editar Producto</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Editar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/2sFcDNM/productos5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Editar datos generales del producto en el formulario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/BqK4W7D/productos6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre</li>
+                                                <li>Ingresar nueva descripción </li>
+                                                <li>Ingresar nueva cantidad</li>
+                                                <li>Ingresar nuevas horas de trabajo</li>
+                                            </ol>
+                                            <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/vVk7ZP0/productos7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Asignar materiales de fabricación al producto</li>                                                
+                                            <ol>
+                                                <li>Dar click en el botón Modificar Materiales</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/1fXLg2T/productos8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                               
+                                                <li>Seleccionar los materiales</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/f9kdGdy/productos9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                                <li>Dar click en el botón Añadir</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/RjwRvp9/productos10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                                <li>Ingresar la cantidad que se usara del material</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/BVPDCnm/productos11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                            </ol>
+                                            <li>Dar click en el botón Asignar</li>
+                                            <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/LrSsTDm/productos12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                    
+                                        </ol>
+                                        <h5>Eliminar Producto</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Eliminar asignado a cada producto</li>
+                                            <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/kcS7Zf2/productos13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                            <li>Dar click en el botón Eliminar en la ventana emergente</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
