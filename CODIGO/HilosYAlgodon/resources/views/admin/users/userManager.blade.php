@@ -19,9 +19,9 @@
                 </thead>
                 <tbody>
                     @foreach ($users as $user)
-                    @php
-                        $roles = $user->assignatedRoles(encrypt($user->id));
-                    @endphp
+                        @php
+                            $roles = $user->assignatedRoles(encrypt($user->id));
+                        @endphp
                         <tr>
                             <th scope="row">{{ $user->id }}</th>
                             <td>{{ $user->name }}</td>
@@ -107,7 +107,8 @@
                             <input id="name" type="text" aria-label="Sizing example input"
                                 aria-describedby="inputGroup-sizing-sm"
                                 class="form-control @error('name') is-invalid @enderror" name="name"
-                                value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                value="{{ old('name') }}" required autocomplete="name" oninput="validarAlfabeticos(this)"
+                                autofocus>
 
                             @error('name')
                                 <span class="invalid-feedback" role="alert">

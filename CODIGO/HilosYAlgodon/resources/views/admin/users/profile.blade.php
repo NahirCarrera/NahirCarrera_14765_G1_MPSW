@@ -21,7 +21,7 @@
                                             id="inputGroup-sizing-sm">Nombre</span>
                                         <input name="name" type="text" class="form-control"
                                             aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-                                            value="{{ $user->name }}">
+                                            value="{{ $user->name }}" oninput="validarAlfabeticos(this)">
                                     </div>
 
                                     <div class="input-group input-group mb-3">
