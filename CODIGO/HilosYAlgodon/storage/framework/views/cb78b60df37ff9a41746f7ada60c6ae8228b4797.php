@@ -593,7 +593,7 @@
                                                 <div class="card-body">                                                
                                                     <!-- Imagen -->
                                                     <div class="image-container">
-                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                        <img src="https://i.ibb.co/9NVQn6s/reporte4.jpg" alt="Imagen" class="img-fluid">
                                                     </div>                                                
                                                 </div>
                                             <li>Ingresar fecha de inicio del reporte</li>
@@ -614,7 +614,7 @@
                                                 <div class="card-body">                                                
                                                     <!-- Imagen -->
                                                     <div class="image-container">
-                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
                                                     </div>                                                
                                                 </div>
                                             <li>Reporte generado</li>
@@ -653,7 +653,158 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Crear nuevo usuario</h5>
+                                        <ol>
+                                            <li>Dar click en el botón para agregar un nuevo usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/8DSLyf4/Usuario1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Llenar el formulario para crear un nuevo usuario </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/h7wc8L3/Usuario2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nombre</li>
+                                                <li>Ingresar correo electrónico</li>
+                                                <li>Ingresar la contraseña que se le asignara al usuario</li>
+                                                <li>Confirmar la contraseña ingresada</li>
+                                            </ol>
+                                            <li>Click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/X21bQYS/Usuario3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Usuario Creado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HnjtqxJ/Usuario4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Editar usuario</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Editar asignado a cada usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mTrHB7g/Usuario5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Editar nombre y correo de usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/sCdhtDY/Usuario6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre</li>
+                                                <li>Ingresar nuevo correo</li>
+                                                <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/8YjxBf9/Usuario9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                            </ol>
+                                            <li>Editar Configuración del Sistema</li>                                                
+                                               
+                                            <ol>
+                                                <li>Editar sueldo base</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/bX5THzQ/Usuario7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <ol>
+                                                    <li>Ingresar nuevo sueldo base</li>
+                                                </ol>
+                                                <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/Mcxvksd/Usuario10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                               
+                                            </ol>
+                                            <li>Asignar Roles al usuario</li>
+                                            <ol>
+                                                <li>Seleccionar los roles que se le asignara al usuario</li>
+                                                 <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/LC8RKGC/Usuario8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                                <li>Dar click en botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/gWK3cDp/Usuario11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            </ol>
+                                        </ol>
+                                        <h5>Ver vista del usuario </h5>
+                                        <ol>
+                                            <li>Dar click en ver</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/d4Z9Q2h/Usuario12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Roles asignados</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/0mvKhSd/Usuario13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Vista del usuario según sus roles asignados</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TBRRRgJ/Usuario14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón Salir Impersonate</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/YZTwtkG/Usuario15.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Eliminar Usuario</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Eliminar asignado a cada usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/M6V1C9D/Usuario16.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en Eliminar de la ventana emergente</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/tspPb8c/Usuario17.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
