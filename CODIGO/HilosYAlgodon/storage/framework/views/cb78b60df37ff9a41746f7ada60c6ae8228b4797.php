@@ -459,7 +459,182 @@
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Generar reporte Materiales</h5>
+                                        <ol>
+                                            <li>Habilitar Materiales</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/t2ZQnGH/reporte1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/ggv1HKD/reporte8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Generar reporte Inventario</h5>
+                                        <ol>
+                                            <li>Habilitar Inventario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/WnwTkRW/reporte2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/RP62Twf/reporte9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Generar reporte Agenda</h5>
+                                        <ol>
+                                            <li>Habilitar Agenda</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/J5P59JG/reporte3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Seleccionar el estado de las ordenes entre Todas, Entregadas y Pendientes</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/9NVQn6s/reporte4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/8rbfPtY/reporte10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Generar reporte Total</h5>
+                                        <ol>
+                                            <li>Activar todos los campos</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/Mg7G4bx/reporte11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Seleccionar el estado de las ordenes entre Todas, Entregadas y Pendientes</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/1bwPV9Q/reporte12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Imprimir Reporte</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Imprimir</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/92SxwpG/reporte13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -488,21 +663,6 @@
         </div>
     </div>
 
-    <!-- Modal para imagenes llamadas con un boton de un enlace -->
-    <div class="modal fade" id="modalImagenes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Imagenes</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body
-                    d-flex justify-content-center align-items-center">
-                    <img src="" id="imagenModal" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 <?php $__env->stopSection(); ?>
 
 
