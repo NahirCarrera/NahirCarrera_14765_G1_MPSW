@@ -182,4 +182,9 @@ class adminController extends Controller
             return back()->with('warning', 'No se han encontrado datos a eliminar');
         }
     }
+
+    public function guia()
+    {
+        return view('admin.guias.guia');
+    }
 }

@@ -30,6 +30,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(
 )->name('admin.')->group(
     function () {
         Route::get('/', 'adminController@administrador')->name('principal');
+        Route::get('/guia', 'adminController@guia')->name('guia');
         Route::resource('/users', 'adminController');
         Route::put('/users/updateRoles/{id}', 'adminController@updateUserRoles')->name('updateUserRoles');
         Route::impersonate();
