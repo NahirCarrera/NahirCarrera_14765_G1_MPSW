@@ -312,7 +312,135 @@
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Añadir Orden</h5>
+                                        <ol>
+                                            <li>Dar click en el botón para agregar nueva orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/1nwyGJ5/agenda0.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Llenar el formulario de una nueva orden </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/KDhbjWb/agenda1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar el nombre del cliente</li>
+                                                <li>Ingresar una descripción de la orden</li>
+                                                <li>Ingresar la fecha de entrega</li>
+                                                <li>Ingresar la dirección del cliente o de entrega</li>
+                                            </ol>
+                                            <li>Dar click en el botón</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/b6ZCKMs/agenda2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Nueva Orden agregada</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/fx4sQb0/agenda3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Editar Orden</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Editar que este asignado a cada orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/dBwvKG9/agenda4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Editar datos generales en la orden en el formulario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/Mk3t2VG/agenda5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre del cliente</li>
+                                                <li>Ingresar nueva descripción de la orden</li>
+                                                <li>Ingresar nueva fecha de entrega</li>
+                                                <li>Ingresar nueva dirección de la orden</li>
+                                                <li>Modificar el estado de pendiente a entregado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HHQ5Cck/agenda6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/sjvP486/agenda7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            </ol>
+                                            <li>Asignar productos a la orden</li>
+                                            <ol>
+                                                <li>Dar click en el botón Elegir Productos</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/CKXVS5x/agenda8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Seleccionar el o los productos que se asignaran a la orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/z4zmjtT/agenda9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Dar click en el botón Añadir</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/F7whG21/agenda10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Asignar la cantidad del producto</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/V2SNr4x/agenda11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Dar click en el botón Asignar </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/6Y83pbB/agenda12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            </ol>
+                                        </ol>
+                                        <h5>Eliminar Orden</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Eliminar asignado a cada orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/nsXQSkG/agenda13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón Eliminar en la ventana emergente</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
