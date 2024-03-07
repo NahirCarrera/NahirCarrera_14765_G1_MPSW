@@ -172,7 +172,128 @@
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Añadir nuevo producto</h5>
+                                        <ol>
+                                            <li>Dar click en el icono de agregar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/MSBZvNf/productos1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Completar el formulario de nuevo producto</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/5Y9Z2ZW/productos2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre del producto</li>
+                                                <li>Ingresar una descripción del producto</li>
+                                                <li>Ingresar la cantidad del producto</li>
+                                                <li>Ingresar las horas de trabajo que se ocupo en realizar el producto</li>
+                                            </ol>
+                                            <li>Dar click en guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/W2R6dbX/productos3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Producto agregado </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBHFQWz/productos4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>                                        
+                                        <h5>Editar Producto</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Editar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/2sFcDNM/productos5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Editar datos generales del producto en el formulario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/BqK4W7D/productos6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre</li>
+                                                <li>Ingresar nueva descripción </li>
+                                                <li>Ingresar nueva cantidad</li>
+                                                <li>Ingresar nuevas horas de trabajo</li>
+                                            </ol>
+                                            <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/vVk7ZP0/productos7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Asignar materiales de fabricación al producto</li>                                                
+                                            <ol>
+                                                <li>Dar click en el botón Modificar Materiales</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/1fXLg2T/productos8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                               
+                                                <li>Seleccionar los materiales</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/f9kdGdy/productos9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                                <li>Dar click en el botón Añadir</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/RjwRvp9/productos10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                                <li>Ingresar la cantidad que se usara del material</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/BVPDCnm/productos11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                            </ol>
+                                            <li>Dar click en el botón Asignar</li>
+                                            <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/LrSsTDm/productos12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                    
+                                        </ol>
+                                        <h5>Eliminar Producto</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Eliminar asignado a cada producto</li>
+                                            <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/kcS7Zf2/productos13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                            <li>Dar click en el botón Eliminar en la ventana emergente</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +312,135 @@
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Añadir Orden</h5>
+                                        <ol>
+                                            <li>Dar click en el botón para agregar nueva orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/1nwyGJ5/agenda0.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Llenar el formulario de una nueva orden </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/KDhbjWb/agenda1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar el nombre del cliente</li>
+                                                <li>Ingresar una descripción de la orden</li>
+                                                <li>Ingresar la fecha de entrega</li>
+                                                <li>Ingresar la dirección del cliente o de entrega</li>
+                                            </ol>
+                                            <li>Dar click en el botón</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/b6ZCKMs/agenda2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Nueva Orden agregada</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/fx4sQb0/agenda3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Editar Orden</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Editar que este asignado a cada orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/dBwvKG9/agenda4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Editar datos generales en la orden en el formulario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/Mk3t2VG/agenda5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre del cliente</li>
+                                                <li>Ingresar nueva descripción de la orden</li>
+                                                <li>Ingresar nueva fecha de entrega</li>
+                                                <li>Ingresar nueva dirección de la orden</li>
+                                                <li>Modificar el estado de pendiente a entregado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HHQ5Cck/agenda6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/sjvP486/agenda7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            </ol>
+                                            <li>Asignar productos a la orden</li>
+                                            <ol>
+                                                <li>Dar click en el botón Elegir Productos</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/CKXVS5x/agenda8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Seleccionar el o los productos que se asignaran a la orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/z4zmjtT/agenda9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Dar click en el botón Añadir</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/F7whG21/agenda10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Asignar la cantidad del producto</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/V2SNr4x/agenda11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <li>Dar click en el botón Asignar </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/6Y83pbB/agenda12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            </ol>
+                                        </ol>
+                                        <h5>Eliminar Orden</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Eliminar asignado a cada orden</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/nsXQSkG/agenda13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón Eliminar en la ventana emergente</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/pr9LkwZ/productos14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +459,182 @@
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Generar reporte Materiales</h5>
+                                        <ol>
+                                            <li>Habilitar Materiales</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/t2ZQnGH/reporte1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/ggv1HKD/reporte8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Generar reporte Inventario</h5>
+                                        <ol>
+                                            <li>Habilitar Inventario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/WnwTkRW/reporte2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/RP62Twf/reporte9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Generar reporte Agenda</h5>
+                                        <ol>
+                                            <li>Habilitar Agenda</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/J5P59JG/reporte3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Seleccionar el estado de las ordenes entre Todas, Entregadas y Pendientes</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/9NVQn6s/reporte4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/8rbfPtY/reporte10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Generar reporte Total</h5>
+                                        <ol>
+                                            <li>Activar todos los campos</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/Mg7G4bx/reporte11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Seleccionar el estado de las ordenes entre Todas, Entregadas y Pendientes</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/9NVQn6s/reporte4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha de inicio del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HBx7gXt/reporte5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Ingresar fecha final del reporte</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TcxQDDR/reporte6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mCkZvrr/reporte7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Reporte generado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/1bwPV9Q/reporte12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Imprimir Reporte</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Imprimir</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/92SxwpG/reporte13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +653,158 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>En esta sección se mostrará la página de inicio de la aplicación</p>
+                                        <h5>Crear nuevo usuario</h5>
+                                        <ol>
+                                            <li>Dar click en el botón para agregar un nuevo usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/8DSLyf4/Usuario1.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Llenar el formulario para crear un nuevo usuario </li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/h7wc8L3/Usuario2.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nombre</li>
+                                                <li>Ingresar correo electrónico</li>
+                                                <li>Ingresar la contraseña que se le asignara al usuario</li>
+                                                <li>Confirmar la contraseña ingresada</li>
+                                            </ol>
+                                            <li>Click en el botón guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/X21bQYS/Usuario3.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Usuario Creado</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/HnjtqxJ/Usuario4.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Editar usuario</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Editar asignado a cada usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/mTrHB7g/Usuario5.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Editar nombre y correo de usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/sCdhtDY/Usuario6.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <ol>
+                                                <li>Ingresar nuevo nombre</li>
+                                                <li>Ingresar nuevo correo</li>
+                                                <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/8YjxBf9/Usuario9.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                            </ol>
+                                            <li>Editar Configuración del Sistema</li>                                                
+                                               
+                                            <ol>
+                                                <li>Editar sueldo base</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/bX5THzQ/Usuario7.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                                <ol>
+                                                    <li>Ingresar nuevo sueldo base</li>
+                                                </ol>
+                                                <li>Dar click en el botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/Mcxvksd/Usuario10.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                               
+                                            </ol>
+                                            <li>Asignar Roles al usuario</li>
+                                            <ol>
+                                                <li>Seleccionar los roles que se le asignara al usuario</li>
+                                                 <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/LC8RKGC/Usuario8.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>                                                
+                                                <li>Dar click en botón Guardar</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/gWK3cDp/Usuario11.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            </ol>
+                                        </ol>
+                                        <h5>Ver vista del usuario </h5>
+                                        <ol>
+                                            <li>Dar click en ver</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/d4Z9Q2h/Usuario12.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Roles asignados</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/0mvKhSd/Usuario13.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Vista del usuario según sus roles asignados</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/TBRRRgJ/Usuario14.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en el botón Salir Impersonate</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/YZTwtkG/Usuario15.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
+                                        <h5>Eliminar Usuario</h5>
+                                        <ol>
+                                            <li>Dar click en el botón Eliminar asignado a cada usuario</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/M6V1C9D/Usuario16.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                            <li>Dar click en Eliminar de la ventana emergente</li>
+                                                <div class="card-body">                                                
+                                                    <!-- Imagen -->
+                                                    <div class="image-container">
+                                                        <img src="https://i.ibb.co/tspPb8c/Usuario17.jpg" alt="Imagen" class="img-fluid">
+                                                    </div>                                                
+                                                </div>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -239,21 +814,6 @@
         </div>
     </div>
 
-    <!-- Modal para imagenes llamadas con un boton de un enlace -->
-    <div class="modal fade" id="modalImagenes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Imagenes</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body
-                    d-flex justify-content-center align-items-center">
-                    <img src="" id="imagenModal" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 <?php $__env->stopSection(); ?>
 
 
